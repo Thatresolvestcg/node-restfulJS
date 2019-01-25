@@ -1,6 +1,8 @@
 # node-restfulJS
 
-Route	                HTTP Verb           	  Description
+here are the http verbs and what they do
+
+Route	                HTTP Verb           	  git Description
 /api/bears	          GET	                    Get all the bears.
 /api/bears	          POST	                  Create a bear.
 /api/bears/:bear_id	  GET	                    Get a single bear.
