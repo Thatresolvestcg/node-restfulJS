@@ -102,9 +102,22 @@ router.route('/bears/:bear_id')
           res.send(err);
 
           res.json({ message : bear.name + ' was updated'})
-        });
+        })
+    })
+})
+
+  // delete the bear with this id
+  .delete(function(req, res) {
+    Bear.remove({
+      _id: req.params.bear_id
+    }, function(err, bear){
+      if (err)
+        res.send(err);
+
+        res.json({message: bear.name + ' was successfuly deleted' });
     });
-});
+  });
+
 
 // REGISTER OUR ROUTES -------------------------------
 // all of our routes will be prefixed with /api
@@ -113,4 +126,4 @@ app.use('/api', router);
 // START THE SERVER
 // =============================================================================
 app.listen(port);
-console.log('Magic happens on port ' + port);
+console.log('Nonsense occurs on port ' + port);
