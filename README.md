@@ -1,5 +1,7 @@
 # node-restfulJS
 
+Use cmd/git bash to run using "node run"
+
 here are the http verbs and what they do
 
 Route	                HTTP Verb           	  git Description
